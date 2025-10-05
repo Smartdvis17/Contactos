@@ -1,0 +1,54 @@
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+/* SweetAlert2 estilos personalizados para evitar conflictos con Tailwind */
+.swal2-popup {
+  font-family: inherit !important;
+}
+
+.swal2-confirm,
+.swal2-cancel {
+  border: none !important;
+  border-radius: 0.5rem !important;
+  font-weight: 600 !important;
+  padding: 0.75rem 1.5rem !important;
+  font-size: 0.875rem !important;
+  transition: all 0.2s ease-in-out !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.swal2-confirm {
+  background-color: #dc2626 !important;
+  color: white !important;
+}
+
+.swal2-confirm:hover {
+  background-color: #b91c1c !important;
+}
+
+.swal2-cancel {
+  background-color: #6b7280 !important;
+  color: white !important;
+  margin-right: 0.5rem !important;
+}
+
+.swal2-cancel:hover {
+  background-color: #4b5563 !important;
+}
+
+.swal2-actions {
+  gap: 0.5rem !important;
+  margin-top: 1.5rem !important;
+}
+
+.swal2-actions:not(.swal2-loading) .swal2-styled {
+  opacity: 1 !important;
+  visibility: visible !important;
+} 
